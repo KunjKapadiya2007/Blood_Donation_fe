@@ -232,13 +232,13 @@ export default function BloodDonationPosterApp() {
                             onChange={(e) => setName(e.target.value)}
                             required
                         />
-                        {/*<TextField*/}
-                        {/*    fullWidth*/}
-                        {/*    label="Contact Number"*/}
-                        {/*    value={contact}*/}
-                        {/*    onChange={(e) => setContact(e.target.value)}*/}
-                        {/*    required*/}
-                        {/*/>*/}
+                        <TextField
+                            fullWidth
+                            label="Contact Number"
+                            value={contact}
+                            onChange={(e) => setContact(e.target.value)}
+                            required
+                        />
                         <Button
                             variant="contained"
                             component="label"

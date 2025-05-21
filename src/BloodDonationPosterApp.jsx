@@ -24,7 +24,7 @@ import CropIcon from "@mui/icons-material/Crop";
 import line from "./assets/Line 1 (1).png";
 import maharaktadan from "./assets/Group 5.png";
 import Group4 from "./assets/Group 4.png";
-import blod from "./assets/image-removebg-preview (6) 1.png";
+import blood from "./assets/image-removebg-preview (6) 1.png";
 import Group3 from "./assets/Group 3.png";
 import men from "./assets/image-removebg-preview (5) 1.png";
 import Group2 from "./assets/Group 2 (1).png";
@@ -232,13 +232,13 @@ export default function BloodDonationPosterApp() {
                             onChange={(e) => setName(e.target.value)}
                             required
                         />
-                        <TextField
-                            fullWidth
-                            label="Contact Number"
-                            value={contact}
-                            onChange={(e) => setContact(e.target.value)}
-                            required
-                        />
+                        {/*<TextField*/}
+                        {/*    fullWidth*/}
+                        {/*    label="Contact Number"*/}
+                        {/*    value={contact}*/}
+                        {/*    onChange={(e) => setContact(e.target.value)}*/}
+                        {/*    required*/}
+                        {/*/>*/}
                         <Button
                             variant="contained"
                             component="label"
@@ -364,10 +364,10 @@ export default function BloodDonationPosterApp() {
                             />
                             <Box
                                 component="img"
-                                src={blod}
+                                src={blood}
                                 sx={{
                                     position: "absolute",
-                                    top: "99px",
+                                    top: "90px",
                                     right: "7px",
                                     height: "40px",
                                 }}
@@ -383,7 +383,7 @@ export default function BloodDonationPosterApp() {
                             >
                                 <Box sx={{pr: 2}}>રક્તદાન સર્વ શ્રેઠ મહાદાન</Box>
                                 <Box sx={{padding: "6px", pr: 3}}>ચાલો કરીયે રક્તદાન</Box>
-                                <Box sx={{padding: "4px", paddingLeft: "40px"}}>
+                                <Box sx={{padding: "4px", paddingLeft: {sm:"40px" , xs:'10px'}}}>
                                     મળશે કોઈને જીવનદાન
                                 </Box>
                             </Box>
@@ -425,36 +425,36 @@ export default function BloodDonationPosterApp() {
                                     transform: "translateX(-50%)",
                                     color: "#fff",
                                     fontWeight: "bold",
-                                    fontSize: "17px",
+                                    fontSize: "15px",
                                     textAlign: "center",
                                     whiteSpace: "nowrap",
                                 }}
                             >
                                 {name}
                             </Box>
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: "210px",
-                                    left: "24px",
-                                    color: "#fff",
-                                    padding: "10px 15px",
-                                    borderRadius: "8px",
-                                    fontWeight: "bold",
-                                    fontSize: "12px",
-                                }}
-                            >
-                                <Box
-                                    variant="h6"
-                                    sx={{
-                                        fontSize: "20px",
-                                        fontWeight: "bold",
-                                        color: "#000",
-                                    }}
-                                >
-                                    {contact}
-                                </Box>
-                            </Box>
+                            {/*<Box*/}
+                            {/*    sx={{*/}
+                            {/*        position: "absolute",*/}
+                            {/*        top: "210px",*/}
+                            {/*        left: "24px",*/}
+                            {/*        color: "#fff",*/}
+                            {/*        padding: "10px 15px",*/}
+                            {/*        borderRadius: "8px",*/}
+                            {/*        fontWeight: "bold",*/}
+                            {/*        fontSize: "12px",*/}
+                            {/*    }}*/}
+                            {/*>*/}
+                            {/*    <Box*/}
+                            {/*        variant="h6"*/}
+                            {/*        sx={{*/}
+                            {/*            fontSize: "20px",*/}
+                            {/*            fontWeight: "bold",*/}
+                            {/*            color: "#000",*/}
+                            {/*        }}*/}
+                            {/*    >*/}
+                            {/*        {contact}*/}
+                            {/*    </Box>*/}
+                            {/*</Box>*/}
                         </Box>
                     </Box>
 

@@ -27,7 +27,7 @@ import Group4 from "./assets/Group 4.png";
 import blood from "./assets/image-removebg-preview (6) 1.png";
 import Group3 from "./assets/Group 3.png";
 import men from "./assets/image-removebg-preview (5) 1.png";
-import Group2 from "./assets/Group 2.png";
+import Group2 from "./assets/image (6).png";
 import Group1 from "./assets/Group 1.png";
 import vector1 from "./assets/Vector 1.png";
 import vector2 from "./assets/Vector 2.png";
@@ -388,50 +388,6 @@ export default function BloodDonationPosterApp() {
                                 </Box>
                             </Box>
                         </Box>
-
-                        {/*<Box*/}
-                        {/*    sx={{*/}
-                        {/*        position: "relative",*/}
-                        {/*        width: "240px",*/}
-                        {/*        height: "240px",*/}
-                        {/*        backgroundImage: `url(${Group3})`,*/}
-                        {/*        backgroundSize: "contain",*/}
-                        {/*        backgroundRepeat: "no-repeat",*/}
-                        {/*        borderRadius: 2,*/}
-                        {/*    }}*/}
-                        {/*>*/}
-                        {/*    {uploadedImage && (*/}
-                        {/*        <Box*/}
-                        {/*            component="img"*/}
-                        {/*            src={uploadedImage}*/}
-                        {/*            alt="User Photo"*/}
-                        {/*            sx={{*/}
-                        {/*                position: "absolute",*/}
-                        {/*                top: "5px",*/}
-                        {/*                left: "16px",*/}
-                        {/*                width: "158px",*/}
-                        {/*                borderRadius: "18px",*/}
-                        {/*                height: "185px",*/}
-                        {/*                objectFit: "cover",*/}
-                        {/*            }}*/}
-                        {/*        />*/}
-                        {/*    )}*/}
-
-                        {/*    <Box*/}
-                        {/*        sx={{*/}
-                        {/*            position: "absolute",*/}
-                        {/*            bottom: "29px",*/}
-                        {/*            left: {xs:"37%" , sm:'30%'},*/}
-                        {/*            color: "#fff",*/}
-                        {/*            fontWeight: "bold",*/}
-                        {/*            fontSize: "15px",*/}
-                        {/*            textAlign: "center",*/}
-                        {/*            whiteSpace: "nowrap",*/}
-                        {/*        }}*/}
-                        {/*    >*/}
-                        {/*        {name}*/}
-                        {/*    </Box>*/}
-                        {/*</Box>*/}
                         <Box
                             sx={{
                                 display: 'flex',
@@ -664,7 +620,7 @@ export default function BloodDonationPosterApp() {
                                             pb: 1,
                                         }}
                                     >
-                                        સમય: સવારે ૨:૦૦ થી ૫:૩૦{" "}
+                                        સમય: બપોરે ૨:૦૦ થી ૫:૩૦{" "}
                                     </Box>
                                     <Box>સ્થળ: કુંજ ફાર્મ, આનંદધારા ની પાછળ,<br/>
                                         મોટા વરાછા,સુરત.</Box>

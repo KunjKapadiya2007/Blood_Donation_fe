@@ -27,7 +27,7 @@ import Group4 from "./assets/Group 4.png";
 import blood from "./assets/image-removebg-preview (6) 1.png";
 import Group3 from "./assets/Group 3.png";
 import men from "./assets/image-removebg-preview (5) 1.png";
-import Group2 from "./assets/Group 2 (1).png";
+import Group2 from "./assets/Group 2.png";
 import Group1 from "./assets/Group 1.png";
 import vector1 from "./assets/Vector 1.png";
 import vector2 from "./assets/Vector 2.png";
@@ -383,78 +383,137 @@ export default function BloodDonationPosterApp() {
                             >
                                 <Box sx={{pr: 2}}>રક્તદાન સર્વ શ્રેઠ મહાદાન</Box>
                                 <Box sx={{padding: "6px", pr: 3}}>ચાલો કરીયે રક્તદાન</Box>
-                                <Box sx={{padding: "4px", paddingLeft: {sm:"40px" , xs:'10px'}}}>
+                                <Box sx={{padding: "4px", paddingLeft: {sm: "40px", xs: '10px'}}}>
                                     મળશે કોઈને જીવનદાન
                                 </Box>
                             </Box>
                         </Box>
 
+                        {/*<Box*/}
+                        {/*    sx={{*/}
+                        {/*        position: "relative",*/}
+                        {/*        width: "240px",*/}
+                        {/*        height: "240px",*/}
+                        {/*        backgroundImage: `url(${Group3})`,*/}
+                        {/*        backgroundSize: "contain",*/}
+                        {/*        backgroundRepeat: "no-repeat",*/}
+                        {/*        borderRadius: 2,*/}
+                        {/*    }}*/}
+                        {/*>*/}
+                        {/*    {uploadedImage && (*/}
+                        {/*        <Box*/}
+                        {/*            component="img"*/}
+                        {/*            src={uploadedImage}*/}
+                        {/*            alt="User Photo"*/}
+                        {/*            sx={{*/}
+                        {/*                position: "absolute",*/}
+                        {/*                top: "5px",*/}
+                        {/*                left: "16px",*/}
+                        {/*                width: "158px",*/}
+                        {/*                borderRadius: "18px",*/}
+                        {/*                height: "185px",*/}
+                        {/*                objectFit: "cover",*/}
+                        {/*            }}*/}
+                        {/*        />*/}
+                        {/*    )}*/}
+
+                        {/*    <Box*/}
+                        {/*        sx={{*/}
+                        {/*            position: "absolute",*/}
+                        {/*            bottom: "29px",*/}
+                        {/*            left: {xs:"37%" , sm:'30%'},*/}
+                        {/*            color: "#fff",*/}
+                        {/*            fontWeight: "bold",*/}
+                        {/*            fontSize: "15px",*/}
+                        {/*            textAlign: "center",*/}
+                        {/*            whiteSpace: "nowrap",*/}
+                        {/*        }}*/}
+                        {/*    >*/}
+                        {/*        {name}*/}
+                        {/*    </Box>*/}
+                        {/*</Box>*/}
                         <Box
                             sx={{
-                                position: "relative",
-                                width: "240px",
-                                height: "240px",
-                                backgroundImage: `url(${Group3})`,
-                                backgroundSize: "contain",
-                                backgroundRepeat: "no-repeat",
-                                borderRadius: 2,
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'center',
                             }}
                         >
-                            {uploadedImage && (
-                                <Box
-                                    component="img"
-                                    src={uploadedImage}
-                                    alt="User Photo"
-                                    sx={{
-                                        position: "absolute",
-                                        top: "5px",
-                                        left: "16px",
-                                        width: "158px",
-                                        borderRadius: "18px",
-                                        height: "185px",
-                                        objectFit: "cover",
-                                    }}
-                                />
-                            )}
-
+                            {/* Tablet Device */}
                             <Box
                                 sx={{
-                                    position: "absolute",
-                                    bottom: "29px",
-                                    left: {xs:"48%" , sm:'38%'},
-                                    transform: "translateX(-50%)",
-                                    color: "#fff",
-                                    fontWeight: "bold",
-                                    fontSize: "15px",
-                                    textAlign: "center",
-                                    whiteSpace: "nowrap",
+                                    position: 'relative',
+                                    width: {sm: '220px', xs: '180px'},
+                                    height: {sm: '250px', xs: '200px'},
+                                    backgroundColor: '#e0e0e0',
+                                    borderRadius: 6,
+                                    padding: {sm: 1.5, xs: 1},
+                                    boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)',
+                                    border: '2px solid #d0d0d0'
+                                }}
+                            >
+                                {/* Screen */}
+                                <Box
+                                    sx={{
+                                        width: '100%',
+                                        height: '100%',
+                                        backgroundColor: '#000000',
+                                        borderRadius: 4,
+                                        position: 'relative',
+                                        overflow: 'hidden'
+                                    }}
+                                >
+                                    <img src={uploadedImage} style={{ width: '100%' , height: '100%' , objectFit: 'fill' }} />
+                                </Box>
+
+                                {/* Home Button */}
+                                <Box
+                                    sx={{
+                                        position: 'absolute',
+                                        bottom: -8,
+                                        left: '50%',
+                                        transform: 'translateX(-50%)',
+                                        width: 16,
+                                        height: 16,
+                                        backgroundColor: '#bdbdbd',
+                                        borderRadius: '50%',
+                                        border: '1px solid #999'
+                                    }}
+                                />
+                            </Box>
+
+                            {/* Red Stand */}
+                            <Box
+                                sx={{
+                                    width: {sm: 200, xs: 180},
+                                    height: 40,
+                                    backgroundColor: '#e53935',
+                                    borderRadius: '20px 20px 8px 8px',
+                                    marginTop: -2,
+                                    boxShadow: '0 4px 12px rgba(229, 57, 53, 0.3)',
+                                    position: 'relative',
+                                    display: 'flex',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    color: 'white',
+                                    fontSize: {xs:'14px' , sm: '16px'},
+                                    letterSpacing: '1px',
+                                    '&::before': {
+                                        content: '""',
+                                        position: 'absolute',
+                                        top: -8,
+                                        left: '50%',
+                                        transform: 'translateX(-50%)',
+                                        width: 60,
+                                        height: 16,
+                                        backgroundColor: '#e53935',
+                                        borderRadius: '8px 8px 0 0'
+                                    }
                                 }}
                             >
                                 {name}
                             </Box>
-                            {/*<Box*/}
-                            {/*    sx={{*/}
-                            {/*        position: "absolute",*/}
-                            {/*        top: "210px",*/}
-                            {/*        left: "24px",*/}
-                            {/*        color: "#fff",*/}
-                            {/*        padding: "10px 15px",*/}
-                            {/*        borderRadius: "8px",*/}
-                            {/*        fontWeight: "bold",*/}
-                            {/*        fontSize: "12px",*/}
-                            {/*    }}*/}
-                            {/*>*/}
-                            {/*    <Box*/}
-                            {/*        variant="h6"*/}
-                            {/*        sx={{*/}
-                            {/*            fontSize: "20px",*/}
-                            {/*            fontWeight: "bold",*/}
-                            {/*            color: "#000",*/}
-                            {/*        }}*/}
-                            {/*    >*/}
-                            {/*        {contact}*/}
-                            {/*    </Box>*/}
-                            {/*</Box>*/}
                         </Box>
                     </Box>
 
